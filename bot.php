@@ -56,16 +56,16 @@ $lists = [
 // fetch all the sysops, checkusers, etc. from Italian wikipedia
 // https://it.wikipedia.org/w/api.php?action=help&modules=query%2Ballusers
 $results = $wit->createQuery( [
-	'action'  => 'query',
-	'list'    => $lists,
+	'action'   => 'query',
+	'list'     => $lists,
 
 	// allusers
-	'auprop'  => 'groups',
-	'augroup' => array_values( $WIT_GROUPS ),
-	'aulimit' => 400,
+	'auprop'   => 'groups',
+	'augroup'  => array_values( $WIT_GROUPS ),
+	'aulimit'  => 400,
 
 	// globalallusers
-	'agugroup' => 'steward',
+	'agugroup' => array_values( $META_GROUPS ),
 	'agulimit' => 200,
 ] );
 
