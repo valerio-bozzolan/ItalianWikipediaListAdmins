@@ -2,6 +2,10 @@
 
 This is an Italian Wikipedia bot. This bot is suitable to be called once a day and populate a JSON with users in special groups.
 
+Look at the involved page:
+
+https://it.wikipedia.org/wiki/Utente:ItwikiBot/AdminList
+
 ## Configuration
 
 Copy `config-example.php` and save it as `config.php`. Fill it.
