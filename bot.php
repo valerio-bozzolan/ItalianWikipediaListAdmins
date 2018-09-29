@@ -65,6 +65,7 @@ $results = $wit->createQuery( [
 	'aulimit'  => 400,
 
 	// globalallusers
+	'aguprop'  => 'groups',
 	'agugroup' => array_values( $META_GROUPS ),
 	'agulimit' => 200,
 ] );
