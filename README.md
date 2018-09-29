@@ -6,6 +6,10 @@ Look at the involved page:
 
 https://it.wikipedia.org/wiki/Utente:ItwikiBot/AdminList
 
+To see an example of client-side script:
+
+https://it.wikipedia.org/wiki/Utente:Valerio_Bozzolan/MarkAdminsLocalStorage.js
+
 ## Configuration
 
 Copy `config-example.php` and save it as `config.php`. Fill it.
