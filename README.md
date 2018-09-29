@@ -1,6 +1,6 @@
 # Mark admins, check users, stewards from Italian Wikipedia
 
-Hello, World!
+This is an Italian Wikipedia bot. This bot is suitable to be called once a day and populate a JSON with users in special groups.
 
 ## Configuration
 
@@ -9,6 +9,10 @@ Copy `config-example.php` and save it as `config.php`. Fill it.
 ## Execution
 
     ./bot.php
+
+## Hacking
+
+Look at [./bot.php](bot.php)
 
 ## License
 
