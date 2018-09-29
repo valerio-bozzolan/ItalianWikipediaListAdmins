@@ -51,7 +51,7 @@ $wit  = \wm\WikipediaIt::getInstance();
 $lists = [
 	'allusers',
 	'globalallusers',
-]
+];
 
 // fetch all the sysops, checkusers, etc. from Italian wikipedia
 // https://it.wikipedia.org/w/api.php?action=help&modules=query%2Ballusers
@@ -74,7 +74,9 @@ foreach( $results->getGenerator() as $result ) {
 	foreach( $lists as $list ) {
 		foreach( $result->query->{ $list } as $user ) {
 			$name = $user->name;
-		    	$users[ $name ] = isset( $users[ $name ] ) ? $users[ $name ] : [];
+			if( ! isset( $users[ $name ] ) ) {
+				$users[ $name ] = [];
+			}
 			if( isset( $user->groups ) ) {
 				foreach( $user->groups as $group ) {
 					$legend = array_search( $group, $GROUPS, true );
