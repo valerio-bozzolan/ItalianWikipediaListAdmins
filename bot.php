@@ -106,3 +106,5 @@ $wit->edit( [
 	'contentformat' => 'application/json',
 	'bot'           => 1,
 ] );
+
+\cli\Log::info( $stats );
