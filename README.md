@@ -8,7 +8,7 @@ https://it.wikipedia.org/wiki/Utente:ItwikiBot/AdminList
 
 To see an example of client-side script:
 
-https://it.wikipedia.org/wiki/Utente:Valerio_Bozzolan/MarkAdminsLocalStorage.js
+https://it.wikipedia.org/wiki/Utente:Valerio_Bozzolan/MarkAdmins.js
 
 ## Configuration
 
