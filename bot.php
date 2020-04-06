@@ -46,7 +46,7 @@ foreach( $GROUPS as $group ) {
 }
 
 // choosen wikis
-$wit  = \wm\WikipediaIt::getInstance();
+$wit  = \wm\WikipediaIt::instance();
 
 $lists = [
 	'allusers',
