@@ -124,6 +124,8 @@ try {
 		"something bad happened: %s",
 		$e->getMessage()
 	) );
+
+	exit( 1 );
 }
 
 \cli\Log::info( $stats );
