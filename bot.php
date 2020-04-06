@@ -106,13 +106,24 @@ foreach( $counts as $group => $count ) {
 }
 $stats = implode( ", ", $stats );
 
-$wit->login();
-$wit->edit( [
-	'title'         => MARKADMINS_PAGE,
-	'summary'       => "Bot: aggiornamento elenco utenti: $stats",
-	'text'          => json_encode( [ 'legend' => $LEGEND, 'users' => $users ] ),
-	'contentformat' => 'application/json',
-	'bot'           => 1,
-] );
+try {
+
+	$wit->login();
+
+	$wit->edit( [
+		'title'         => MARKADMINS_PAGE,
+		'summary'       => "Bot: aggiornamento elenco utenti: $stats",
+		'text'          => json_encode( [ 'legend' => $LEGEND, 'users' => $users ] ),
+		'contentformat' => 'application/json',
+		'bot'           => 1,
+	] );
+
+} catch( Exception $e ) {
+
+	\cli\Log::error( sprintf(
+		"something bad happened: %s",
+		$e->getMessage()
+	) );
+}
 
 \cli\Log::info( $stats );
