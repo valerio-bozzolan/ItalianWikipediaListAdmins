@@ -33,6 +33,14 @@ $WIT_GROUPS = [
 	'AI'  => 'interface-admin',
 ];
 
+// legend
+$LEGEND = [
+	'B'   => "burocrate",
+	'CU'  => "check user",
+	'A'   => "amministratore",
+	'AI'  => "amministratore dell'interfaccia",
+];
+
 // all groups
 $GROUPS = array_merge( $META_GROUPS, $WIT_GROUPS );
 
@@ -102,7 +110,7 @@ $wit->login();
 $wit->edit( [
 	'title'         => MARKADMINS_PAGE,
 	'summary'       => "Bot: aggiornamento elenco utenti: $stats",
-	'text'          => json_encode( [ 'legend' => $GROUPS, 'users' => $users ] ),
+	'text'          => json_encode( [ 'legend' => $LEGEND, 'users' => $users ] ),
 	'contentformat' => 'application/json',
 	'bot'           => 1,
 ] );
