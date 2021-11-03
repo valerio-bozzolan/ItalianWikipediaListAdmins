@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-# Copyright (C) 2018 Valerio Bozzolan
+# Copyright (C) 2018, 2019, 2020, 2021 Valerio Bozzolan
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
 # published by the Free Software Foundation, either version 3 of the
@@ -39,6 +39,7 @@ $LEGEND = [
 	'CU'  => "check user",
 	'A'   => "amministratore",
 	'AI'  => "amministratore dell'interfaccia",
+	'S'   => "steward",
 ];
 
 // all groups
