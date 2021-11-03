@@ -20,7 +20,7 @@ Copy `config-example.php` and save it as `config.php`. Fill it.
 
 ## Hacking
 
-Look at [./bot.php](bot.php)
+Look at `bot.php`.
 
 ## License
 
